@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/root/web/client/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/client.dir/main.cpp.o -c /root/web/client/main.cpp",
+  "file": "/root/web/client/main.cpp"
+},
+{
+  "directory": "/root/web/client/build/lib",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/LIB.dir/log.cpp.o -c /root/web/client/lib/log.cpp",
+  "file": "/root/web/client/lib/log.cpp"
+}
+]
