@@ -5,8 +5,8 @@ include(CTest)
 enable_testing()
 
 add_subdirectory(lib)
-add_executable(client main.cpp)
-target_link_libraries(client LIB)
+add_executable(server main.cpp)
+target_link_libraries(server LIB)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

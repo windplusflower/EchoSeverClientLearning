@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/server.dir/main.cpp.o -o server 
+/usr/bin/g++ -g -rdynamic CMakeFiles/server.dir/main.cpp.o -o server  lib/libLIB.a 

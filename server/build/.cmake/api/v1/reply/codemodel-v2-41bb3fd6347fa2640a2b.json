@@ -242,7 +242,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "LIB::@306ed2d68c6501e8728f",
-					"jsonFile" : "target-LIB-Debug-111ef8c0a27c486028cc.json",
+					"jsonFile" : "target-LIB-Debug-466c7a3bdf6b7f2e716a.json",
 					"name" : "LIB",
 					"projectIndex" : 0
 				},
@@ -318,9 +318,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-client-Debug-463002f18a65078e177d.json",
-					"name" : "client",
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-Debug-78e657f5c6b4c0c3188a.json",
+					"name" : "server",
 					"projectIndex" : 0
 				}
 			]
@@ -329,8 +329,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/root/web/client/build",
-		"source" : "/root/web/client"
+		"build" : "/root/web/server/build",
+		"source" : "/root/web/server"
 	},
 	"version" : 
 	{

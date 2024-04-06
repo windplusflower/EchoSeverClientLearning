@@ -26,7 +26,7 @@
 /root/web/server/build/CMakeFiles/ContinuousCoverage.dir
 /root/web/server/build/CMakeFiles/ContinuousMemCheck.dir
 /root/web/server/build/CMakeFiles/ContinuousSubmit.dir
-/root/web/server/build/CMakeFiles/client.dir
+/root/web/server/build/CMakeFiles/server.dir
 /root/web/server/build/CMakeFiles/package.dir
 /root/web/server/build/CMakeFiles/package_source.dir
 /root/web/server/build/CMakeFiles/test.dir

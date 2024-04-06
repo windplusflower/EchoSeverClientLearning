@@ -242,7 +242,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "LIB::@306ed2d68c6501e8728f",
-					"jsonFile" : "target-LIB-Debug-111ef8c0a27c486028cc.json",
+					"jsonFile" : "target-LIB-Debug-466c7a3bdf6b7f2e716a.json",
 					"name" : "LIB",
 					"projectIndex" : 0
 				},
@@ -329,8 +329,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/root/web/server/build",
-		"source" : "/root/web/server"
+		"build" : "/root/web/client/build",
+		"source" : "/root/web/client"
 	},
 	"version" : 
 	{

@@ -344,4 +344,10 @@ CMakeFiles/client.dir/main.cpp.o: /root/web/server/main.cpp \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /usr/include/c++/11/optional /usr/include/c++/11/memory_resource \
  /usr/include/c++/11/bits/uses_allocator_args.h \
- /usr/include/c++/11/variant /root/web/server/lib/log.h
+ /usr/include/c++/11/variant /usr/include/x86_64-linux-gnu/sys/epoll.h \
+ /usr/include/x86_64-linux-gnu/bits/epoll.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /root/web/server/lib/log.h

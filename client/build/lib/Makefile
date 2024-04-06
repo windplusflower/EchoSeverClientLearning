@@ -184,6 +184,30 @@ log.cpp.s:
 	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/log.cpp.s
 .PHONY : log.cpp.s
 
+util.o: util.cpp.o
+.PHONY : util.o
+
+# target to build an object file
+util.cpp.o:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/util.cpp.o
+.PHONY : util.cpp.o
+
+util.i: util.cpp.i
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cpp.i:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/util.cpp.i
+.PHONY : util.cpp.i
+
+util.s: util.cpp.s
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cpp.s:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/util.cpp.s
+.PHONY : util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -199,6 +223,9 @@ help:
 	@echo "... log.o"
 	@echo "... log.i"
 	@echo "... log.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
 .PHONY : help
 
 

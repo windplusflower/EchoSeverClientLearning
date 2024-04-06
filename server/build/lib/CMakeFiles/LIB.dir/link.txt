@@ -1,2 +1,2 @@
-/usr/bin/ar qc libLIB.a CMakeFiles/LIB.dir/log.cpp.o
+/usr/bin/ar qc libLIB.a CMakeFiles/LIB.dir/log.cpp.o CMakeFiles/LIB.dir/util.cpp.o
 /usr/bin/ranlib libLIB.a

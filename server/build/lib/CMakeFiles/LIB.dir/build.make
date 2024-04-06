@@ -83,17 +83,33 @@ lib/CMakeFiles/LIB.dir/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB.dir/log.cpp.s"
 	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/web/server/lib/log.cpp -o CMakeFiles/LIB.dir/log.cpp.s
 
+lib/CMakeFiles/LIB.dir/util.cpp.o: lib/CMakeFiles/LIB.dir/flags.make
+lib/CMakeFiles/LIB.dir/util.cpp.o: ../lib/util.cpp
+lib/CMakeFiles/LIB.dir/util.cpp.o: lib/CMakeFiles/LIB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/LIB.dir/util.cpp.o"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/LIB.dir/util.cpp.o -MF CMakeFiles/LIB.dir/util.cpp.o.d -o CMakeFiles/LIB.dir/util.cpp.o -c /root/web/server/lib/util.cpp
+
+lib/CMakeFiles/LIB.dir/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB.dir/util.cpp.i"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/web/server/lib/util.cpp > CMakeFiles/LIB.dir/util.cpp.i
+
+lib/CMakeFiles/LIB.dir/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB.dir/util.cpp.s"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/web/server/lib/util.cpp -o CMakeFiles/LIB.dir/util.cpp.s
+
 # Object files for target LIB
 LIB_OBJECTS = \
-"CMakeFiles/LIB.dir/log.cpp.o"
+"CMakeFiles/LIB.dir/log.cpp.o" \
+"CMakeFiles/LIB.dir/util.cpp.o"
 
 # External object files for target LIB
 LIB_EXTERNAL_OBJECTS =
 
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/log.cpp.o
+lib/libLIB.a: lib/CMakeFiles/LIB.dir/util.cpp.o
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/build.make
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libLIB.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libLIB.a"
 	cd /root/web/server/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/LIB.dir/cmake_clean_target.cmake
 	cd /root/web/server/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIB.dir/link.txt --verbose=$(VERBOSE)
 
