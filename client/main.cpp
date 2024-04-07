@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
-#include "lib/log.h"
+#include "lib/util.h"
 int main() {
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     err(sockfd == -1, "socket create error!");

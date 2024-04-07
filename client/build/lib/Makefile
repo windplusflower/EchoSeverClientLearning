@@ -160,6 +160,54 @@ LIB/fast:
 	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/build
 .PHONY : LIB/fast
 
+epoll.o: epoll.cpp.o
+.PHONY : epoll.o
+
+# target to build an object file
+epoll.cpp.o:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/epoll.cpp.o
+.PHONY : epoll.cpp.o
+
+epoll.i: epoll.cpp.i
+.PHONY : epoll.i
+
+# target to preprocess a source file
+epoll.cpp.i:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/epoll.cpp.i
+.PHONY : epoll.cpp.i
+
+epoll.s: epoll.cpp.s
+.PHONY : epoll.s
+
+# target to generate assembly for a file
+epoll.cpp.s:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/epoll.cpp.s
+.PHONY : epoll.cpp.s
+
+iaddr.o: iaddr.cpp.o
+.PHONY : iaddr.o
+
+# target to build an object file
+iaddr.cpp.o:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/iaddr.cpp.o
+.PHONY : iaddr.cpp.o
+
+iaddr.i: iaddr.cpp.i
+.PHONY : iaddr.i
+
+# target to preprocess a source file
+iaddr.cpp.i:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/iaddr.cpp.i
+.PHONY : iaddr.cpp.i
+
+iaddr.s: iaddr.cpp.s
+.PHONY : iaddr.s
+
+# target to generate assembly for a file
+iaddr.cpp.s:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/iaddr.cpp.s
+.PHONY : iaddr.cpp.s
+
 log.o: log.cpp.o
 .PHONY : log.o
 
@@ -183,6 +231,30 @@ log.s: log.cpp.s
 log.cpp.s:
 	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/log.cpp.s
 .PHONY : log.cpp.s
+
+socket.o: socket.cpp.o
+.PHONY : socket.o
+
+# target to build an object file
+socket.cpp.o:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/socket.cpp.o
+.PHONY : socket.cpp.o
+
+socket.i: socket.cpp.i
+.PHONY : socket.i
+
+# target to preprocess a source file
+socket.cpp.i:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/socket.cpp.i
+.PHONY : socket.cpp.i
+
+socket.s: socket.cpp.s
+.PHONY : socket.s
+
+# target to generate assembly for a file
+socket.cpp.s:
+	cd /root/web/client/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/socket.cpp.s
+.PHONY : socket.cpp.s
 
 util.o: util.cpp.o
 .PHONY : util.o
@@ -220,9 +292,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... LIB"
+	@echo "... epoll.o"
+	@echo "... epoll.i"
+	@echo "... epoll.s"
+	@echo "... iaddr.o"
+	@echo "... iaddr.i"
+	@echo "... iaddr.s"
 	@echo "... log.o"
 	@echo "... log.i"
 	@echo "... log.s"
+	@echo "... socket.o"
+	@echo "... socket.i"
+	@echo "... socket.s"
 	@echo "... util.o"
 	@echo "... util.i"
 	@echo "... util.s"

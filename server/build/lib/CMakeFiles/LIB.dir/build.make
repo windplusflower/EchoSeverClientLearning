@@ -69,10 +69,38 @@ include lib/CMakeFiles/LIB.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/LIB.dir/flags.make
 
+lib/CMakeFiles/LIB.dir/epoll.cpp.o: lib/CMakeFiles/LIB.dir/flags.make
+lib/CMakeFiles/LIB.dir/epoll.cpp.o: ../lib/epoll.cpp
+lib/CMakeFiles/LIB.dir/epoll.cpp.o: lib/CMakeFiles/LIB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/LIB.dir/epoll.cpp.o"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/LIB.dir/epoll.cpp.o -MF CMakeFiles/LIB.dir/epoll.cpp.o.d -o CMakeFiles/LIB.dir/epoll.cpp.o -c /root/web/server/lib/epoll.cpp
+
+lib/CMakeFiles/LIB.dir/epoll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB.dir/epoll.cpp.i"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/web/server/lib/epoll.cpp > CMakeFiles/LIB.dir/epoll.cpp.i
+
+lib/CMakeFiles/LIB.dir/epoll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB.dir/epoll.cpp.s"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/web/server/lib/epoll.cpp -o CMakeFiles/LIB.dir/epoll.cpp.s
+
+lib/CMakeFiles/LIB.dir/iaddr.cpp.o: lib/CMakeFiles/LIB.dir/flags.make
+lib/CMakeFiles/LIB.dir/iaddr.cpp.o: ../lib/iaddr.cpp
+lib/CMakeFiles/LIB.dir/iaddr.cpp.o: lib/CMakeFiles/LIB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/LIB.dir/iaddr.cpp.o"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/LIB.dir/iaddr.cpp.o -MF CMakeFiles/LIB.dir/iaddr.cpp.o.d -o CMakeFiles/LIB.dir/iaddr.cpp.o -c /root/web/server/lib/iaddr.cpp
+
+lib/CMakeFiles/LIB.dir/iaddr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB.dir/iaddr.cpp.i"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/web/server/lib/iaddr.cpp > CMakeFiles/LIB.dir/iaddr.cpp.i
+
+lib/CMakeFiles/LIB.dir/iaddr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB.dir/iaddr.cpp.s"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/web/server/lib/iaddr.cpp -o CMakeFiles/LIB.dir/iaddr.cpp.s
+
 lib/CMakeFiles/LIB.dir/log.cpp.o: lib/CMakeFiles/LIB.dir/flags.make
 lib/CMakeFiles/LIB.dir/log.cpp.o: ../lib/log.cpp
 lib/CMakeFiles/LIB.dir/log.cpp.o: lib/CMakeFiles/LIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/LIB.dir/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/LIB.dir/log.cpp.o"
 	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/LIB.dir/log.cpp.o -MF CMakeFiles/LIB.dir/log.cpp.o.d -o CMakeFiles/LIB.dir/log.cpp.o -c /root/web/server/lib/log.cpp
 
 lib/CMakeFiles/LIB.dir/log.cpp.i: cmake_force
@@ -83,10 +111,24 @@ lib/CMakeFiles/LIB.dir/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB.dir/log.cpp.s"
 	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/web/server/lib/log.cpp -o CMakeFiles/LIB.dir/log.cpp.s
 
+lib/CMakeFiles/LIB.dir/socket.cpp.o: lib/CMakeFiles/LIB.dir/flags.make
+lib/CMakeFiles/LIB.dir/socket.cpp.o: ../lib/socket.cpp
+lib/CMakeFiles/LIB.dir/socket.cpp.o: lib/CMakeFiles/LIB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/LIB.dir/socket.cpp.o"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/LIB.dir/socket.cpp.o -MF CMakeFiles/LIB.dir/socket.cpp.o.d -o CMakeFiles/LIB.dir/socket.cpp.o -c /root/web/server/lib/socket.cpp
+
+lib/CMakeFiles/LIB.dir/socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB.dir/socket.cpp.i"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/web/server/lib/socket.cpp > CMakeFiles/LIB.dir/socket.cpp.i
+
+lib/CMakeFiles/LIB.dir/socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB.dir/socket.cpp.s"
+	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/web/server/lib/socket.cpp -o CMakeFiles/LIB.dir/socket.cpp.s
+
 lib/CMakeFiles/LIB.dir/util.cpp.o: lib/CMakeFiles/LIB.dir/flags.make
 lib/CMakeFiles/LIB.dir/util.cpp.o: ../lib/util.cpp
 lib/CMakeFiles/LIB.dir/util.cpp.o: lib/CMakeFiles/LIB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/LIB.dir/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/LIB.dir/util.cpp.o"
 	cd /root/web/server/build/lib && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/LIB.dir/util.cpp.o -MF CMakeFiles/LIB.dir/util.cpp.o.d -o CMakeFiles/LIB.dir/util.cpp.o -c /root/web/server/lib/util.cpp
 
 lib/CMakeFiles/LIB.dir/util.cpp.i: cmake_force
@@ -99,17 +141,23 @@ lib/CMakeFiles/LIB.dir/util.cpp.s: cmake_force
 
 # Object files for target LIB
 LIB_OBJECTS = \
+"CMakeFiles/LIB.dir/epoll.cpp.o" \
+"CMakeFiles/LIB.dir/iaddr.cpp.o" \
 "CMakeFiles/LIB.dir/log.cpp.o" \
+"CMakeFiles/LIB.dir/socket.cpp.o" \
 "CMakeFiles/LIB.dir/util.cpp.o"
 
 # External object files for target LIB
 LIB_EXTERNAL_OBJECTS =
 
+lib/libLIB.a: lib/CMakeFiles/LIB.dir/epoll.cpp.o
+lib/libLIB.a: lib/CMakeFiles/LIB.dir/iaddr.cpp.o
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/log.cpp.o
+lib/libLIB.a: lib/CMakeFiles/LIB.dir/socket.cpp.o
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/util.cpp.o
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/build.make
 lib/libLIB.a: lib/CMakeFiles/LIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libLIB.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/web/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libLIB.a"
 	cd /root/web/server/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/LIB.dir/cmake_clean_target.cmake
 	cd /root/web/server/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIB.dir/link.txt --verbose=$(VERBOSE)
 

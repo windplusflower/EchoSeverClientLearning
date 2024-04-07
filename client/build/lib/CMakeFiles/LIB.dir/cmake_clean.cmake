@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LIB.dir/epoll.cpp.o"
+  "CMakeFiles/LIB.dir/epoll.cpp.o.d"
+  "CMakeFiles/LIB.dir/iaddr.cpp.o"
+  "CMakeFiles/LIB.dir/iaddr.cpp.o.d"
   "CMakeFiles/LIB.dir/log.cpp.o"
   "CMakeFiles/LIB.dir/log.cpp.o.d"
+  "CMakeFiles/LIB.dir/socket.cpp.o"
+  "CMakeFiles/LIB.dir/socket.cpp.o.d"
   "CMakeFiles/LIB.dir/util.cpp.o"
   "CMakeFiles/LIB.dir/util.cpp.o.d"
   "libLIB.a"

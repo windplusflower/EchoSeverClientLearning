@@ -854,12 +854,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/server.dir/all: lib/CMakeFiles/LIB.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/web/server/build/CMakeFiles --progress-num=4,5 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/web/server/build/CMakeFiles --progress-num=7,8 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/web/server/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/web/server/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/web/server/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
@@ -880,12 +880,12 @@ CMakeFiles/server.dir/clean:
 lib/CMakeFiles/LIB.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/LIB.dir/build.make lib/CMakeFiles/LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/web/server/build/CMakeFiles --progress-num=1,2,3 "Built target LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/web/server/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target LIB"
 .PHONY : lib/CMakeFiles/LIB.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/web/server/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/web/server/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/LIB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/web/server/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/LIB.dir/rule

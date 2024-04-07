@@ -344,4 +344,7 @@ CMakeFiles/client.dir/main.cpp.o: /root/web/client/main.cpp \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /usr/include/c++/11/optional /usr/include/c++/11/memory_resource \
  /usr/include/c++/11/bits/uses_allocator_args.h \
- /usr/include/c++/11/variant /root/web/client/lib/log.h
+ /usr/include/c++/11/variant /root/web/client/lib/util.h \
+ /root/web/client/lib/epoll.h /usr/include/x86_64-linux-gnu/sys/epoll.h \
+ /usr/include/x86_64-linux-gnu/bits/epoll.h /root/web/client/lib/iaddr.h \
+ /root/web/client/lib/log.h /root/web/client/lib/socket.h

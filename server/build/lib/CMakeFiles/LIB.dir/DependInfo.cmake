@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/root/web/server/lib/epoll.cpp" "lib/CMakeFiles/LIB.dir/epoll.cpp.o" "gcc" "lib/CMakeFiles/LIB.dir/epoll.cpp.o.d"
+  "/root/web/server/lib/iaddr.cpp" "lib/CMakeFiles/LIB.dir/iaddr.cpp.o" "gcc" "lib/CMakeFiles/LIB.dir/iaddr.cpp.o.d"
   "/root/web/server/lib/log.cpp" "lib/CMakeFiles/LIB.dir/log.cpp.o" "gcc" "lib/CMakeFiles/LIB.dir/log.cpp.o.d"
+  "/root/web/server/lib/socket.cpp" "lib/CMakeFiles/LIB.dir/socket.cpp.o" "gcc" "lib/CMakeFiles/LIB.dir/socket.cpp.o.d"
   "/root/web/server/lib/util.cpp" "lib/CMakeFiles/LIB.dir/util.cpp.o" "gcc" "lib/CMakeFiles/LIB.dir/util.cpp.o.d"
   )
 
