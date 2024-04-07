@@ -1,6 +1,6 @@
 /client/lib
 /server/lib
-/target
+/target/
 build/
 .cache/
 .vscode/
