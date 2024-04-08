@@ -37,7 +37,10 @@ int Socket::getFd() {
 }
 
 std::string Socket::recv() {
-    err(fd == -1, "error socket incalid!\n");
+    if (fd == -1) {
+        printf("socket fd invalid!\n");
+        return "";
+    }
     char buf[BUF_LEN];
     bzero(buf, BUF_LEN);
     std::string res = "";
@@ -56,7 +59,10 @@ std::string Socket::recv() {
     return res;
 }
 void Socket::send(std::string message) {
-    err(fd == -1, "error socket incalid!\n");
+    if (fd == -1) {
+        printf("socket fd invalid!\n");
+        return;
+    }
     if (message.empty()) return;
     const char *p = message.c_str();
     int n = message.size();

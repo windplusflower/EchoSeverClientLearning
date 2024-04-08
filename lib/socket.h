@@ -18,7 +18,6 @@ public:
     void setnonblocking();
 
     int accept(InetAddress *);
-
     int getFd();
     std::string recv();
     void send(std::string);
