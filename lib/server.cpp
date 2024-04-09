@@ -1,20 +1,15 @@
 #include "server.h"
+#include "acceptor.h"
 #include "channel.h"
 #include "iaddr.h"
 
 Server::Server(EventLoop *_loop) : loop(_loop) {
-    serv_sock = new Socket();
-    InetAddress *serv_addr = new InetAddress("127.0.0.1", 8888);
-    serv_sock->bind(serv_addr);
-    serv_sock->listen();
-    serv_sock->setnonblocking();
-
-    Channel *serv_chan = new Channel(loop, serv_sock->getFd());
-    serv_chan->setCallback(std::bind(&Server::newConnection, this, serv_sock));
-    serv_chan->enableReading();
+    acceptor = new Acceptor(loop);
+    acceptor->setNewConnectionCallback(
+        std::bind(&Server::newConnection, this, std::placeholders::_1));
 }
 Server::~Server() {
-    delete serv_sock;
+    delete acceptor;
 };
 
 void Server::handleReadEvent(Socket *sock) {

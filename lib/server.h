@@ -2,10 +2,11 @@
 
 #include "eventloop.h"
 #include "socket.h"
+#include "acceptor.h"
 class Server {
 private:
     EventLoop *loop;
-    Socket *serv_sock;
+    Acceptor *acceptor;
 
 public:
     Server(EventLoop *);
