@@ -13,27 +13,27 @@ Connection::~Connection() {
     delete channel;
     delete sock;
 }
-void Connection::echo(int fd) {
-    if (fd == -1) {
-        printf("socket fd invalid!\n");
-        return;
-    }
+void Connection::echo(int sockfd) {
     char buf[BUF_LEN];
-    bzero(buf, BUF_LEN);
-    std::string res = "";
     while (true) {
-        int len = read(fd, buf, BUF_LEN);
-        if (len > 0) res += buf;
-        if (len == -1 && errno == EINTR) continue;
-        if (len == -1 && (errno == EAGAIN || errno == EWOULDBLOCK)) break;
-        if (len == 0) {
-            printf("client %d closed\n", fd);
+        bzero(&buf, sizeof(buf));
+        ssize_t bytes_read = read(sockfd, buf, sizeof(buf));
+        if (bytes_read > 0) {
+            printf("message from client fd %d: %s\n", sockfd, buf);
+            write(sockfd, buf, bytes_read);
+        } else if (bytes_read == -1 && errno == EINTR) {
+            printf("continue reading");
+            continue;
+        } else if (bytes_read == -1
+                   && ((errno == EAGAIN) || (errno == EWOULDBLOCK))) {
+            printf("finish reading once, errno: %d\n", errno);
+            break;
+        } else if (bytes_read == 0) {
+            printf("EOF, client fd %d disconnected\n", sockfd);
             deleteConnectionCallback(sock);
             break;
         }
     }
-    printf("received : %s\n", res.c_str());
-    return;
 }
 void Connection::setDeleteConnectionCallback(std::function<void(Socket *)> cb) {
     deleteConnectionCallback = cb;

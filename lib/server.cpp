@@ -11,11 +11,6 @@ Server::~Server() {
     delete acceptor;
 };
 
-void Server::handleReadEvent(Socket *sock) {
-    std::string s = sock->recv();
-    printf("Received from fd %d:%s\n", sock->getFd(), s.c_str());
-    sock->send(s);
-}
 void Server::newConnection(Socket *sock) {
     Connection *conn = new Connection(loop, sock);
     std::function<void(Socket *)> cb =

@@ -16,7 +16,6 @@ public:
     Server(EventLoop *);
     ~Server();
 
-    void handleReadEvent(Socket *);
     void newConnection(Socket *serv_sock);
     void deleteConnection(Socket *sock);
 };
