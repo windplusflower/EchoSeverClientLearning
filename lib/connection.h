@@ -1,6 +1,7 @@
 #pragma once
+#include "buffer.h"
 #include <functional>
-
+class Buffer;
 class EventLoop;
 class Socket;
 class Channel;
@@ -10,6 +11,7 @@ private:
     Socket *sock;
     Channel *channel;
     std::function<void(Socket *)> deleteConnectionCallback;
+    Buffer buffer;
 
 public:
     Connection(EventLoop *_loop, Socket *_sock);

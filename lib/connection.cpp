@@ -1,6 +1,8 @@
 #include "connection.h"
 #include "channel.h"
 #include "socket.h"
+#include "buffer.h"
+#include "log.h"
 #include <unistd.h>
 #include <strings.h>
 Connection::Connection(EventLoop *_loop, Socket *_sock) :
@@ -19,14 +21,17 @@ void Connection::echo(int sockfd) {
         bzero(&buf, sizeof(buf));
         ssize_t bytes_read = read(sockfd, buf, sizeof(buf));
         if (bytes_read > 0) {
-            printf("message from client fd %d: %s\n", sockfd, buf);
-            write(sockfd, buf, bytes_read);
+            buffer.append(buf);
         } else if (bytes_read == -1 && errno == EINTR) {
             printf("continue reading");
             continue;
         } else if (bytes_read == -1
                    && ((errno == EAGAIN) || (errno == EWOULDBLOCK))) {
-            printf("finish reading once, errno: %d\n", errno);
+            printf("finish reading once\n");
+            printf("message from client fd %d: %s\n", sockfd, buffer.c_str());
+            err(write(sockfd, buffer.c_str(), buffer.size()) == -1,
+                "socket write error");
+            buffer.clear();
             break;
         } else if (bytes_read == 0) {
             printf("EOF, client fd %d disconnected\n", sockfd);
