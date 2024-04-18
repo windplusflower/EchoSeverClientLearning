@@ -1,11 +1,14 @@
 #include "eventloop.h"
+#include "threadpool.h"
 
 EventLoop::EventLoop() {
     ep = new Epoll();
+    threadpool = new ThreadPool;
     quit = false;
 }
 EventLoop::~EventLoop() {
     delete ep;
+    delete threadpool;
 }
 
 void EventLoop::loop() {
@@ -16,4 +19,7 @@ void EventLoop::loop() {
 }
 void EventLoop::updateChannel(Channel *channel) {
     ep->updateChannel(channel);
+}
+void EventLoop::addThread(std::function<void()> func) {
+    threadpool->add(func);
 }
