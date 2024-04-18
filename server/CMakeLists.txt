@@ -1,13 +1,10 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(client VERSION 0.1.0 LANGUAGES C CXX)
+# 设置源文件列表
+set(SERVER_SOURCES
+    main.cpp
+)
 
-include(CTest)
-enable_testing()
+# 添加可执行文件的构建
+add_executable(server ${SERVER_SOURCES})
 
-add_subdirectory(lib)
-add_executable(server main.cpp)
-target_link_libraries(server LIB)
-
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+# 链接 lib 库
+target_link_libraries(server PUBLIC lib)

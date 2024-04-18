@@ -1,6 +1,9 @@
-# 查找当前目录下的所有源文件
-# 并将名称保存到 DIR_LIB_SRCS 变量
-aux_source_directory(. DIR_LIB_SRCS)
+# 获取当前目录下的所有源文件
+file(GLOB LIB_SOURCES "*.cpp")
+file(GLOB LIB_HEADERS "*.h")
 
-# 生成链接库
-add_library (LIB ${DIR_LIB_SRCS}) 
+# 添加库的构建
+add_library(lib ${LIB_SOURCES} ${LIB_HEADERS})
+
+# 包含当前目录作为项目的头文件目录
+target_include_directories(lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
