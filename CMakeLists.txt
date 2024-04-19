@@ -6,3 +6,6 @@ project(WebServer)
 add_subdirectory(lib)
 add_subdirectory(server)
 add_subdirectory(client)
+
+add_executable(test test.cpp)
+target_link_libraries(test PUBLIC lib)

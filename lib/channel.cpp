@@ -2,15 +2,22 @@
 #include "eventloop.h"
 
 Channel::Channel(EventLoop *_loop, int _fd) :
-    loop(_loop), fd(_fd), events(0), revents(0), inEpoll(false){};
+    loop(_loop), fd(_fd), events(0), revents(0), inEpoll(false),
+    usepool(false){};
 Channel::~Channel(){};
 
 void Channel::handleEvent() {
-    loop->addThread(callback);
+    if (usepool)
+        loop->addThread(callback);
+    else
+        callback();
 }
 void Channel::enableReading() {
-    events = EPOLLET | EPOLLIN;
+    events |= EPOLLPRI | EPOLLIN;
     loop->updateChannel(this);
+}
+void Channel::useET() {
+    events |= EPOLLET;
 }
 
 int Channel::getFd() {
@@ -27,6 +34,9 @@ bool Channel::getInEpoll() {
 }
 void Channel::setInEpoll() {
     inEpoll = 1;
+}
+void Channel::useThreadpool() {
+    usepool = 1;
 }
 
 // void setEvents(uint32_t);

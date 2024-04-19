@@ -9,6 +9,8 @@ Connection::Connection(EventLoop *_loop, Socket *_sock) :
     loop(_loop), sock(_sock) {
     channel = new Channel(loop, sock->getFd());
     channel->setCallback(std::bind(&Connection::echo, this, sock->getFd()));
+    channel->useET();
+    channel->useThreadpool();
     channel->enableReading();
 }
 Connection::~Connection() {

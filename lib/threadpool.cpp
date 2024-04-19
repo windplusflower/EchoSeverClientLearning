@@ -24,10 +24,3 @@ ThreadPool::~ThreadPool() {
         if (th.joinable()) th.join();
     }
 }
-
-void ThreadPool::add(std::function<void()> fun) {
-    std::unique_lock<std::mutex> lock(tasks_mtx);
-    tasks.emplace(fun);
-    lock.unlock();
-    cv.notify_one();
-}

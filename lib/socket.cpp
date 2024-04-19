@@ -74,3 +74,8 @@ void Socket::send(std::string message) {
         n -= len;
     }
 }
+void Socket::connect(InetAddress *_addr) {
+    struct sockaddr_in addr = _addr->addr;
+    err(::connect(fd, (sockaddr *)&addr, sizeof(addr)) == -1,
+        "socket connect error");
+}
